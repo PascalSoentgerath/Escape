@@ -1,0 +1,16 @@
+/* ----- FOOTER -----*/
+
+.footer-navigation { 
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin-left: 1.1rem;
+
+        a {
+            &:link { color: #FFF;}
+            &:visited { color: #FFF;}
+            &:hover { text-decoration: underline;}
+        }
+       }
+}

@@ -1,0 +1,98 @@
+/* ----- TEAM ----- */
+
+#team { 
+    background-color: #111111;
+    color: #FFF;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.team-box-first { margin-left: auto; margin-right: 0;}
+.team-box-third { margin-left: 0; margin-right: auto;}
+
+.team-profile {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 2rem;
+    border: 5px solid #FFF;
+    border-radius: 99999%;
+}
+
+.team-first { background: url(../img/team1.jpg); background-size: cover;}
+.team-second { background: url(../img/team2.jpg); background-size: cover;}
+.team-third { background: url(../img/team3.jpg); background-size: cover;}
+
+
+.team-box > p {
+    margin-bottom: .75rem;
+}
+
+.team-activity {
+    color: #787878;
+}
+
+.team-socials { 
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin-left: 1rem;
+
+        a {
+            display: inline-block;
+            padding: 4px 8px;
+            border: 2px solid #FFF;
+            border-radius: 99999%;
+
+            &:link { color: #FFF;}
+            &:visited { color: #FFF;}
+            &:hover { color: #a5a5a5; border: 2px solid #a5a5a5;}
+
+        }
+
+    }
+}
+
+.team-socials > li > .team-facebook { padding: 4px 10px;}
+
+@media (max-width: 920px) {
+
+    .team-profile {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .team-profile {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .team-socials > li {
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width: 549px) {
+
+    .team-box {
+        margin-bottom: 1.75rem;
+    }
+    .team-profile {
+        width: 210px;
+        height: 210px;
+    }
+}

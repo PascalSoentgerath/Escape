@@ -1,0 +1,38 @@
+/* ---GENERAL --- */
+
+$section-padding-top: 7.5rem;
+$focus-box-shadow: 0 0 10px 5px #FFF;
+$border-solid-white: 2px solid #FFF;
+
+section {
+    padding-top: $section-padding-top;
+    padding-bottom: 5rem;
+
+    @media (max-width: 768px) {
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+a {text-decoration: none;}
+
+hr { margin-top: 5rem;}
+
+:focus { outline: none; box-shadow: $focus-box-shadow;}
+
+.font300 { font-weight: 300;}
+.font700 { font-weight: 700;}
+
+.screenreader { display: none;}
+
+.intro-container { 
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (max-width: 549px) {
+    
+         width: 95%;
+    }
+}

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../vendor/Mulish/static/Mulish-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}

@@ -1,0 +1,157 @@
+/* CLIENTS */
+
+#clients { 
+    background-color: #f0f0f0;
+    padding-bottom: $section-padding-top;
+}
+
+.client-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 99999%;
+}
+
+.client-profile-small {
+    display: none;
+    width: 110px;
+    height: 110px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 99999%;
+}
+
+.first-client {
+    background: url(../img/client1.jpg);
+    background-size: cover;
+    margin-bottom: 6rem;
+}
+
+.client-profile-small-first {
+    background: url(../img/client1.jpg);
+    background-size: cover;
+}
+
+.second-client {
+    background: url(../img/client2.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.client-profile-small-second {
+    background: url(../img/client2.jpg);
+    background-size: cover;
+}
+
+.client-box {
+    background-color: #FFF;
+    padding: 33px 90px;
+    margin-top: 2.5rem;
+    border: 1px solid #f3f3f3;
+    position: relative;
+}
+
+.client-quote {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.client-name {
+    color: #4a8ec0;
+    margin-bottom: 0;
+}
+
+.client-box::before,
+.client-box::after {
+    content: "";
+    position: absolute;
+}
+
+@mixin client-box-arrow-border1($border-px-right) {
+    border: $border-px-right solid transparent;
+    border-right: $border-px-right solid #FFF;
+}
+@mixin client-box-arrow-border2($border-px-left) {
+    border: $border-px-left solid transparent;
+    border-left: $border-px-left solid #FFF;
+}
+
+.client-box-first::before {
+    left: -32px;
+    top: 37%;
+    @include client-box-arrow-border1(16px)
+}
+.client-box-first::after {
+    left: -28px;
+    top: 38%;
+    @include client-box-arrow-border1(14px)
+}
+
+.client-box-second::before {
+    right: -32px;
+    top: 37%;
+    @include client-box-arrow-border2(16px)
+}
+.client-box-second::after {
+    right: -28px;
+    top: 38%;
+    @include client-box-arrow-border2(14px)
+}
+
+@media (max-width: 1152px) {
+
+    .client-profile {
+        width: 150px;
+        height: 150px;
+    }
+    .client-box {
+        padding: 21px 50px;
+        margin-top: 11px;
+    }
+}
+@media (max-width: 880px) {
+    
+    .client-profile {
+        width: 130px;
+        height: 130px;
+    }
+    .client-box { padding: 15px 21px;}
+}
+@media (max-width: 768px) {
+    
+    .client-profile {
+        width: 90px;
+        height: 90px;
+    }
+    .first-client {
+        margin-bottom: 10rem;
+    }
+
+    #clients {padding-bottom: 5rem;}
+    .client-box { margin-top: 0;}
+    .client-quote { font-size: 1.5rem;}
+    .client-name { font-size: 1.3rem;}
+
+    .client-box::after,
+    .client-box::before { display: none;}
+}
+@media (max-width: 549px) {
+
+    .client-profile {
+        display: none;
+    }
+    .client-profile-small {
+        display: block;
+    }
+    .client-box {
+        padding: 2.4rem 8rem;
+    }
+    .client-box-first {
+        margin-bottom: 3.2rem;
+    }
+    .client-name {
+        text-align: center;
+    }
+}
